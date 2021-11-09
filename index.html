@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet " href="style.css">
+    <title>SimsBoard</title>
+</head>
+<body>
+    <div class="option-container">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="tools-container scale-tools">
+        <img class="pencil" src="NewIcons/Black_Pencil.svg">
+        <img class="eraser" src="NewIcons/Eraser.svg">
+        <img class="download" src="NewIcons/Download.svg">
+        <img class="upload" src="NewIcons/Photo.svg">
+        <img class="sticky" src="NewIcons/StickyNote.svg">
+        <img class="undo" src="NewIcons/Undo.svg">
+        <img class="redo" src="NewIcons/Redo.svg">
+        
+    </div>
+    <div class="pencil-tool">
+        <div class="pencil-width-container">
+            <input type="range" min="2" max="10" val="3" class ="pencil-width">
+        </div>
+        <div class="pencil-color-container">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+    <div class="eraser-tool">
+        <input type="range" min="5" max="30" val="6" class = "eraser-width">
+    </div>
+  <!--  <div class="sticky-cont">
+        <div class="header-cont">
+            <div class="minimise"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-cont">
+           <textarea></textarea>
+        </div>
+    </div> -->
+    <canvas></canvas>
+    <script src="tool.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
